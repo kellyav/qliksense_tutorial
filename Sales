@@ -1,0 +1,47 @@
+Table1: //name the table Table1
+LOAD
+    BackOrder,
+    Cost,
+    "Customer Number",
+    Date#(`Date`,'MM/DD/YYYY') as "Date", //ensure Dates load correctly
+    GrossSales AS "Gross Number",
+    "Invoice Date" AS BillDate,
+    "Invoice Number",
+    "Item Desc" AS "Item Description",
+    "Item Number",
+    Margin,
+    "Open Qty" as "Open Quantity",
+    OpenOrder,
+    "Order Number",
+    "Promised Delivery Date",
+    Sales,
+    "Sales Qty" AS "Sales Quantity",
+    "Sales Rep Number",
+    SalesKey
+FROM [lib://DataFiles/Sales.xlsx]
+(ooxml, embedded labels, table is [Sales data]);
+
+
+// This WHERE line only loads data where sales are greater than $100 
+//It also uses the Date function to load data 
+// where the date is greater than or equal to January 1, 2013.
+// Remeber to comment out the semicolon before using a WHERE
+
+// WHERE Sales > 100.00 AND Date("Invoice Date") >= '01/01/2013';
+
+
+
+SET quantity_threshold = 12000;
+
+
+Sales_Buckets:    // create a new table called Sales_Buckets
+    LOAD
+    "Sales Quantity" as "High_Quantity",
+    "Item Description" as "Item",
+    "Customer Number" as "Customer"
+Resident Table1                       // loading data from table1
+Where ("Sales Quantity" > $(quantity_threshold));  
+// the where statement only loads data that 
+// meets the quantity threshold ($12000).
+
+
