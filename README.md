@@ -13,10 +13,10 @@ Data used to practice Qliksense is found in the Dataloadeditor_datafiles folder.
 
 - See their official website for the step by step tuorial (with screenshots!)
 
-[Clcik this link for their Selecting and loading data documentation](https://help.qlik.com/en-US/cloud-services/Subsystems/Hub/Content/Sense_Hub/LoadData/select-load-file-data.htm), where you can click through the table of contents on the left of the page.
+[Here is their Selecting and Loading Data documentation](https://help.qlik.com/en-US/cloud-services/Subsystems/Hub/Content/Sense_Hub/LoadData/select-load-file-data.htm), where you can click through the table of contents on the left of the page.
 
 
 - See their Youtube for Data Load editor scripting videos 
 
-Their Youtube channel has helpful How-to vidoes, like this one: [Data Load Editor Walkthrough ](https://www.youtube.com/watch?v=Pl9QKCifUTg)
+Their Youtube channel has helpful How-To vidoes, like this one: [Data Load Editor Walkthrough ](https://www.youtube.com/watch?v=Pl9QKCifUTg)
 
