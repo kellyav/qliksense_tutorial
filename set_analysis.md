@@ -9,7 +9,7 @@ SUM({$<Year={"2025}>}Sales)
 Summarises Sales for the year 2015. Useful KPI chart object for this, 
 to diplay 2 KPI charts for the SUM of Sales in 2015, and the sum of sales in 2014. 
 
-## Breakdown: 
+## Syntax Breakdown: 
   - Sum(Sales) -> this outer layer is obvious. takes the sum
   - **{ ... }** -> (i.e. Sum({ ... }Sales) this expression syntax represents a set of conditions 
   for that Sum of Sales. Excludes/ includes data.
@@ -39,7 +39,7 @@ Sum({$<Country={"Italy"}>}Sales)
 then this chart will NOT be affected when the user chooses 'France' in another chart. This means that defining a set modifier in the charts code will lock in that particular category for that chart. 
 
 
-### Credits/ Sources
+## Credits/ Sources
 
 - [Beginners' Introduction to Set Analysis - Qlik Sense and QlikView](https://www.youtube.com/watch?time_continue=77&v=YMQJnKMkfxg&feature=emb_title)
 
