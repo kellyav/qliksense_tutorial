@@ -2,12 +2,14 @@
 
 ## Example
 
-- SUM({$<Year={"2025}>}Sales) 
+```
+SUM({$<Year={"2025}>}Sales) 
+```
 
 Summarises Sales for the year 2015. Useful KPI chart object for this, 
 to diplay 2 KPI charts for the SUM of Sales in 2015, and the sum of sales in 2014. 
 
-Breakdown: 
+## Breakdown: 
   - Sum(Sales) -> this outer layer is obvious. takes the sum
   - **{ ... }** -> (i.e. Sum({ ... }Sales) this expression syntax represents a set of conditions 
   for that Sum of Sales. Excludes/ includes data.
