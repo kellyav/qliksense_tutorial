@@ -22,6 +22,13 @@ Breakdown:
     - i.e. <Year={"2015, 2016"}> or {$<Year={2015}, Country={"Germany"}>}
   
 
+Selecting 'France' in one chart typically will change the results of the other charts that have Country (and therefore France) as a variable, to reflect insights on only France. AKA the charts are dependent on variables that are selected in the dashboard (if applicable). 
+
+** This will not happen if a set modifier is defined. AKA if Chart1 has the code: 
+```
+Sum({$<Country={"Italy"}>}Sales) 
+```
+then this chart will NOT be affected when the user chooses 'France' in another chart. This means that defining a set modifier in the charts code will lock in that particular category for that chart. 
 
 
 ### Credits/ Sources
