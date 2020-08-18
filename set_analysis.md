@@ -20,7 +20,7 @@ Breakdown:
       - **{1-$}** excludes the current selection. 
       i.e. 
 ```
-Sum({$-1<Year={"2015"}>}Sales) excludes Sales from 2015
+Sum({1-$<Year={"2015"}>}Sales) excludes Sales from 2015
 ```
   - **< ... >** -> set modifier. Defines the condition we want our measure to reflect. i.e. 
 ```
