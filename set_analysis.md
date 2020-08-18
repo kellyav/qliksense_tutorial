@@ -17,9 +17,15 @@ Breakdown:
       - **{$}** represents current selections. Will take dimensions on the app you want to 
       filter on into conisderation and the chart value will change.
       based off those current selections
-      - **{1-$}** excludes the current selection. i.e. Sum({$-1<Year={"2015"}>}Sales) excludes Sales from 2015
-  - **< ... >** -> set modifier. Defines the condition we want our measure to reflect. 
-    - i.e. <Year={"2015, 2016"}> or {$<Year={2015}, Country={"Germany"}>}
+      - **{1-$}** excludes the current selection. 
+      i.e. 
+```
+Sum({$-1<Year={"2015"}>}Sales) excludes Sales from 2015
+```
+  - **< ... >** -> set modifier. Defines the condition we want our measure to reflect. i.e. 
+```
+<Year={"2015, 2016"}> or {$<Year={2015}, Country={"Germany"}>}
+```
   
 
 Selecting 'France' in one chart typically will change the results of the other charts that have Country (and therefore France) as a variable, to reflect insights on only France. AKA the charts are dependent on variables that are selected in the dashboard (if applicable). 
