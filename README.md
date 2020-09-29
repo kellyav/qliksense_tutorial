@@ -20,3 +20,10 @@ Data used to practice Qliksense is found in the Dataloadeditor_datafiles folder.
 
   - Their Youtube channel has helpful How-To vidoes, like this one: [Data Load Editor Walkthrough ](https://www.youtube.com/watch?v=Pl9QKCifUTg)
 
+
+
+## Helpful Links
+
+- Figuring out which symbol should you use? " ", [ ], ` ` or ' ' 
+
+https://community.qlik.com/t5/Qlik-Design-Blog/QlikView-Quoteology/ba-p/1476029 
