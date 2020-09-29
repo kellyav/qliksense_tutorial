@@ -20,10 +20,12 @@ count({$<state={'successful'}>}ID) / count(ID)
 ```
 
 
-- 
+- Calling variables for sum of sales
 
+```
 Let vSales  = 'Sum(Sales)' ;
 Let vSales2  = '=Sum(Sales)' ;
+```
 
 In the second variable, we add an equal sign before the expression. This will cause the variable to be calculated before it is expanded and the expression is evaluated
 
